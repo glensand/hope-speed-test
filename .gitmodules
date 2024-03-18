@@ -1,0 +1,3 @@
+[submodule "hope-io"]
+	path = hope-io
+	url = https://github.com/glensand/hope-io
