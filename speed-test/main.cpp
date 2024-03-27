@@ -34,6 +34,7 @@ void test(bool upload, hope::io::stream* stream, std::size_t size) {
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = end - start;
     std::cout << "Execution time: " << duration.count() << " seconds." << std::endl;
+    std::cout << "Speed: " << double(size) / 1024 / 1024 / duration.count() << "MB/s\n";
 }
 
 int main(int argc, char *argv[]) {
